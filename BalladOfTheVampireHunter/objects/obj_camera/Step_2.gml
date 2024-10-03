@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description smooth camera
+//code written following YouTube tutorial
 #macro view view_camera[0]
 camera_set_view_size(view,view_width,view_height)
 
@@ -10,6 +10,7 @@ if (instance_exists(obj_player)) {
 var _cur_x = camera_get_view_x(view)
 var _cur_y = camera_get_view_y(view)
 
+/* Smooth camera*/
 var _spd = 0.1
 camera_set_view_pos(view,
 					lerp(_cur_x,_x,_spd),

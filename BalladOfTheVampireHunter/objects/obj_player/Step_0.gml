@@ -1,10 +1,18 @@
- /// @description Insert description here
-// You can write your code in this editor
+ /// @description player controls
+ 
+//TODO fix slippery movement?
 
-// Debug print fps
-show_debug_message(fps)
+#region debug
 
-// Input
+// check fps (if game seems laggy)
+// show_debug_message(fps)
+
+#endregion
+
+#region input
+
+mouse_angle = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y); 
+
 if (keyboard_check(ord("A")))
 {
 	h_input = -1
@@ -31,23 +39,52 @@ else
 	v_input = 0
 }
 
-if (mouse_check_button_pressed(mb_left))
+#endregion 
+
+#region animation info
+
+mouse_direction = int64((mouse_angle + 45) / 90) // 0 = right, 1 = up, 2 = left, 3 = down
+if (mouse_direction > 3) //rounding error ;)
+	mouse_direction = 0 
+
+// show_debug_message(mouse_direction)
+// show_debug_message(mouse_angle)
+
+if (xvel > yvel) {
+	if (xvel > 0) {
+		walk_direction = DIR.RIGHT
+	} else {
+		walk_direction = DIR.LEFT
+	}
+} else {
+	if (yvel > 0) {
+		walk_direction = DIR.DOWN
+	} else {
+		walk_direction = DIR.UP
+	}
+}
+
+#endregion
+
+#region attack
+/*
+if (mouse_check_button_pressed(mb_left)) //TODO: make angle fixed and not update during swing
 {
     var sword = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_sword);
     
     //Positioning Logic Described in obj_sword step event to set initial position for frame one
-    var angle = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y);
     var distance = 80;
 	
-    sword.x = obj_player.x + lengthdir_x(distance, angle);
-    sword.y = obj_player.y + lengthdir_y(distance, angle);
+    sword.x = obj_player.x + lengthdir_x(distance, mouse_angle);
+    sword.y = obj_player.y + lengthdir_y(distance, mouse_angle);
 	
-    sword.image_angle = angle - 45;
+    sword.image_angle = mouse_angle - 45;
 }
+*/
+#endregion
 
+#region velocity handler
 
-
-// Update velocity
 xvel += h_input * walk_accel
 yvel += v_input * walk_accel
 
@@ -120,3 +157,5 @@ yvel = clamp(yvel,-max_walk_vel, max_walk_vel)
 // Update position
 x += xvel
 y += yvel
+
+#endregion
