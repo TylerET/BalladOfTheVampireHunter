@@ -11,13 +11,3 @@ if (hp > 0 and !is_invincible)
 	// instance_destroy()
     global.game_over = true;
 }
-
-//slow down enemy-- inspired by FSM project
-//deprecated, chose to add another collision event in obj__zombie
-/*
-with obj_zombie { //runs in every obj_zombie instance
-	if () {
-		
-	}
-}
-*/

@@ -67,10 +67,10 @@ if (xvel > yvel) {
 #endregion
 
 #region attack
-/*
+
 if (mouse_check_button_pressed(mb_left)) //TODO: make angle fixed and not update during swing
 {
-    var sword = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_sword);
+    var sword = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_banjo);
     
     //Positioning Logic Described in obj_sword step event to set initial position for frame one
     var distance = 80;
@@ -78,9 +78,9 @@ if (mouse_check_button_pressed(mb_left)) //TODO: make angle fixed and not update
     sword.x = obj_player.x + lengthdir_x(distance, mouse_angle);
     sword.y = obj_player.y + lengthdir_y(distance, mouse_angle);
 	
-    sword.image_angle = mouse_angle - 45;
+    sword.image_angle = mouse_angle;
 }
-*/
+
 #endregion
 
 #region velocity handler

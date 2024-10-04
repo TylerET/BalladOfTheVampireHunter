@@ -1,6 +1,8 @@
 /// @description 
 
 //optional TODO-- use lerp() (or similar function) to slowly turn toward player
+// TODO add attack range
+// TODO make zombie faster than player
 if (instance_exists(obj_player)) 
 {
 	//Point towards the player
