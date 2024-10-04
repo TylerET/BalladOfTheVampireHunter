@@ -13,11 +13,11 @@
 
 mouse_angle = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y); 
 
-if (keyboard_check(ord("A")))
+if (keyboard_check(ord("A"))|| keyboard_check(vk_left) )
 {
 	h_input = -1
 }
-else if (keyboard_check(ord("D"))) 
+else if (keyboard_check(ord("D")) || keyboard_check(vk_right))
 {
 	h_input = 1
 }
@@ -26,11 +26,11 @@ else
 	h_input = 0
 }
 
-if (keyboard_check(ord("W")))
+if (keyboard_check(ord("W")) || keyboard_check(vk_up))
 {
 	v_input = -1
 } 
-else if (keyboard_check(ord("S")))
+else if (keyboard_check(ord("S")) || keyboard_check(vk_down))
 {
 	v_input = 1
 } 
