@@ -6,4 +6,5 @@ if (irandom(99) < 50)  // 5% chance (0 to 4 out of 100)
 
 
 global.xp += xp_val
+global.mana += 20;
 show_debug_message("xp:  " + string(global.xp));
