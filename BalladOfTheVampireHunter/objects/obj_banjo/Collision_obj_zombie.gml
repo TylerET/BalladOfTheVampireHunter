@@ -1,3 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_destroy(other)
+if (!other.damage_cooldown) 
+{
+    if (other.hp > 0) 
+    {
+        other.hp -= 1; 
+        other.damage_cooldown = true; 
+		other.is_damaged = true;
+        other.alarm[1] = 30;
+    }
+    else 
+    {
+        instance_destroy(other);
+    }
+}
