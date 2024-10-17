@@ -21,7 +21,7 @@ if (device_mouse_x_to_gui(0) > bbox_left && device_mouse_x_to_gui(0) < bbox_righ
 		{		
 			
 			// Go to main game room.
-			room_goto(rm_room_1);
+			room_goto(rm_intro_room);
 		}
 	}
 }
