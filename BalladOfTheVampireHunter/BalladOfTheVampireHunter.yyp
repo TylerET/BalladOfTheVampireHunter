@@ -74,6 +74,7 @@
     {"id":{"name":"obj_ui_button_d","path":"objects/obj_ui_button_d/obj_ui_button_d.yy",},},
     {"id":{"name":"obj_ui_button_s","path":"objects/obj_ui_button_s/obj_ui_button_s.yy",},},
     {"id":{"name":"obj_ui_button_w","path":"objects/obj_ui_button_w/obj_ui_button_w.yy",},},
+    {"id":{"name":"obj_wall_collisions","path":"objects/obj_wall_collisions/obj_wall_collisions.yy",},},
     {"id":{"name":"obj_zombie","path":"objects/obj_zombie/obj_zombie.yy",},},
     {"id":{"name":"rm_intro_room","path":"rooms/rm_intro_room/rm_intro_room.yy",},},
     {"id":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
