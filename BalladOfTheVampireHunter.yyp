@@ -61,6 +61,7 @@
     {"id":{"name":"obj_enemy_flyer","path":"objects/obj_enemy_flyer/obj_enemy_flyer.yy",},},
     {"id":{"name":"obj_enemy_ghoul","path":"objects/obj_enemy_ghoul/obj_enemy_ghoul.yy",},},
     {"id":{"name":"obj_intro_text","path":"objects/obj_intro_text/obj_intro_text.yy",},},
+    {"id":{"name":"obj_invisible_wall","path":"objects/obj_invisible_wall/obj_invisible_wall.yy",},},
     {"id":{"name":"obj_level_up_screen","path":"objects/obj_level_up_screen/obj_level_up_screen.yy",},},
     {"id":{"name":"obj_lifedrop","path":"objects/obj_lifedrop/obj_lifedrop.yy",},},
     {"id":{"name":"obj_movement_text","path":"objects/obj_movement_text/obj_movement_text.yy",},},
