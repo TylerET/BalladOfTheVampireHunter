@@ -24,4 +24,8 @@ instance_activate_object(obj_player);
 instance_activate_all()
 }
 
+if (global.game_over == true) {
+	instance_destroy(obj_player) 
+}
+
 

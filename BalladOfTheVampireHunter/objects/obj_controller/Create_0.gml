@@ -1,6 +1,6 @@
 #region xp levels experience
 
-
+global.game_over = false
 global.xp = 0;
 var _base_xp_goal = 10;
 var _xp_growth_rate = 1.05;
