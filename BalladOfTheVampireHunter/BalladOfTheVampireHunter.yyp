@@ -56,6 +56,7 @@
   "name":"BalladOfTheVampireHunter",
   "resources":[
     {"id":{"name":"fnt_large","path":"fonts/fnt_large/fnt_large.yy",},},
+    {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"obj_attack_text","path":"objects/obj_attack_text/obj_attack_text.yy",},},
     {"id":{"name":"obj_banjo","path":"objects/obj_banjo/obj_banjo.yy",},},
     {"id":{"name":"obj_bullet_shriek","path":"objects/obj_bullet_shriek/obj_bullet_shriek.yy",},},
