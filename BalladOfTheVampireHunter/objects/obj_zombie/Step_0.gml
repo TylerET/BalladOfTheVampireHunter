@@ -9,8 +9,14 @@ if (instance_exists(obj_player))
 	direction = point_direction(x, y, obj_player.x, obj_player.y);
 	
 	//Speed handler
+	if (distance_to_object(obj_player) < 300) {
+		max_speed = 9
+	} else {
+		max_speed = 3
+	}
+	
 	if (speed < max_speed) {
-		speed += 0.1
+		speed += 0.2
 		speed = min(speed, max_speed)
 	}
 }
