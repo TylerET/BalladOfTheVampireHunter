@@ -1,24 +1,24 @@
 /// @description Modular UI for Health, XP, and Mana Bars
 // Draw event of your controller object or a dedicated UI object
 // Draw event of your controller object or dedicated UI object
-if (global.isPaused) {
-    draw_set_color(c_white);  
-    var text = "GAME PAUSED";
-    var text_width = string_width(text);
-    var text_height = string_height(text);
+//if (global.isPaused) {
+//    draw_set_color(c_white);  
+//    var text = "GAME PAUSED";
+//    var text_width = string_width(text);
+//    var text_height = string_height(text);
     
-    // Get the current camera or view size
-    var cam = view_camera[0]; 
-    var cam_width = camera_get_view_width(cam);
-    var cam_height = camera_get_view_height(cam);
+//    // Get the current camera or view size
+//    var cam = view_camera[0]; 
+//    var cam_width = camera_get_view_width(cam);
+//    var cam_height = camera_get_view_height(cam);
     
-    // Calculate the center position based on the camera/view size
-    var x_center = (cam_width / 2) - (text_width / 2);
-    var y_center = (cam_height / 2) - (text_height / 2);
+//    // Calculate the center position based on the camera/view size
+//    var x_center = (cam_width / 2) - (text_width / 2);
+//    var y_center = (cam_height / 2) - (text_height / 2);
 
-    draw_text(x_center, y_center, text);
-    draw_set_color(c_white);
-}
+//    draw_text(x_center, y_center, text);
+//    draw_set_color(c_white);
+//}
 
 
 

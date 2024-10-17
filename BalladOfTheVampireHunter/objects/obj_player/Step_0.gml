@@ -13,30 +13,32 @@
 
 mouse_angle = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y); 
 
-if (keyboard_check(ord("A"))|| keyboard_check(vk_left) )
-{
-	h_input = -1
-}
-else if (keyboard_check(ord("D")) || keyboard_check(vk_right))
-{
-	h_input = 1
-}
-else
-{
-	h_input = 0
-}
+if (!global.isPaused){
+	if (keyboard_check(ord("A"))|| keyboard_check(vk_left) )
+	{
+		h_input = -1
+	}
+	else if (keyboard_check(ord("D")) || keyboard_check(vk_right))
+	{
+		h_input = 1
+	}
+	else
+	{
+		h_input = 0
+	}
 
-if (keyboard_check(ord("W")) || keyboard_check(vk_up))
-{
-	v_input = -1
-} 
-else if (keyboard_check(ord("S")) || keyboard_check(vk_down))
-{
-	v_input = 1
-} 
-else 
-{
-	v_input = 0
+	if (keyboard_check(ord("W")) || keyboard_check(vk_up))
+	{
+		v_input = -1
+	} 
+	else if (keyboard_check(ord("S")) || keyboard_check(vk_down))
+	{
+		v_input = 1
+	} 
+	else 
+	{
+		v_input = 0
+	}
 }
 
 #endregion 
@@ -68,7 +70,7 @@ if (xvel > yvel) {
 
 #region attack
 
-if (mouse_check_button_pressed(mb_left) and !attack_cooldown) //TODO: make angle fixed and not update during swing
+if (!global.isPaused && mouse_check_button_pressed(mb_left) && !attack_cooldown) //TODO: make angle fixed and not update during swing
 {
     var sword = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_banjo);
     
@@ -84,6 +86,7 @@ if (mouse_check_button_pressed(mb_left) and !attack_cooldown) //TODO: make angle
 #endregion
 
 #region velocity handler
+if (!global.isPaused){
 
 xvel += h_input * walk_accel
 yvel += v_input * walk_accel
@@ -157,6 +160,8 @@ yvel = clamp(yvel,-max_walk_vel, max_walk_vel)
 // Update position
 x += xvel
 y += yvel
+
+}
 
 #endregion
 
