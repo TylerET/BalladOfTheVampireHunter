@@ -70,7 +70,7 @@ if (xvel > yvel) {
 
 #region attack
 
-if (!global.isPaused && mouse_check_button_pressed(mb_left) && !attack_cooldown) //TODO: make angle fixed and not update during swing
+if (!global.isPaused && mouse_check_button_pressed(mb_left)) //TODO: make angle fixed and not update during swing
 {
     var sword = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_banjo);
     

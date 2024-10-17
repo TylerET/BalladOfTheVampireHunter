@@ -44,7 +44,7 @@ var card4_x = card_start_x + (card_width + spacing) * 3;
 // Draw sprites for each card
 draw_sprite(spr_sword, 0, card1_x, card_y);
 draw_sprite(spr_lifepip, 0, card2_x, card_y);
-draw_sprite(spr_player, 0, card3_x, card_y);
+draw_sprite(spr_player_old, 0, card3_x, card_y);
 draw_sprite(spr_banjo, 0, card4_x, card_y);
 
 // Draw text below each sprite to represent different upgrades
