@@ -161,9 +161,8 @@ if (y > room_height - sprite_height) {
     y = room_height - sprite_height;
 }
 
-}
 
-#endregion
+#endregiron
 
 #region outside border
 // Check for left boundary (x cannot be less than 0)
