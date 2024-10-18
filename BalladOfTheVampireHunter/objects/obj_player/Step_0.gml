@@ -70,17 +70,23 @@ if (xvel > yvel) {
 
 #region attack
 
-if (!global.isPaused && mouse_check_button_pressed(mb_left)) //TODO: make angle fixed and not update during swing
+if (!global.isPaused and mouse_check_button(mb_left) and !atk_on_cd)
 {
-    var sword = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_banjo);
+    var _banjo = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_banjo);
     
     //Positioning Logic Described in obj_sword step event to set initial position for frame one
-    var distance = 80;
+	// handle alternate swinging direction
+	obj_persistent_controller.banjo_flipflop *= -1
+	
+	banjo_angle = mouse_angle + 90*(sign(obj_persistent_controller.banjo_flipflop))
+
+    _banjo.x = obj_player.x + lengthdir_x(obj_banjo.dist_from_player, banjo_angle);
+    _banjo.y = obj_player.y + lengthdir_y(obj_banjo.dist_from_player, banjo_angle);
     
-    sword.x = obj_player.x + lengthdir_x(distance, mouse_angle);
-    sword.y = obj_player.y + lengthdir_y(distance, mouse_angle);
-    
-    sword.image_angle = mouse_angle;
+    _banjo.image_angle = banjo_angle
+	
+	atk_on_cd = true
+	alarm[2] = atk_cd
 }
 
 #endregion
@@ -139,30 +145,6 @@ if (!global.isPaused) {
 }
 
 #endregion
-
-#region outside border
-// Check for left boundary (x cannot be less than 0)
-if (x < 0) {
-    x = 0;
-}
-
-// Check for right boundary (x cannot be more than room_width - sprite_width)
-if (x > room_width - sprite_width) {
-    x = room_width - sprite_width;
-}
-
-// Check for top boundary (y cannot be less than 0)
-if (y < 0) {
-    y = 0;
-}
-
-// Check for bottom boundary (y cannot be more than room_height - sprite_height)
-if (y > room_height - sprite_height) {
-    y = room_height - sprite_height;
-}
-
-
-#endregiron
 
 #region outside border
 // Check for left boundary (x cannot be less than 0)

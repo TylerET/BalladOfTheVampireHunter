@@ -16,7 +16,7 @@ if (instance_exists(obj_player))
 	}
 	
 	if (speed < max_speed) {
-		speed += 0.2
+		speed += 0.15
 		speed = min(speed, max_speed)
 	}
 }
