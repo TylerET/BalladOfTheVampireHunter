@@ -4,7 +4,7 @@
 if (!wave_active) {
     // Start the wave after a delay
     if (spawn_delay <= 0) {
-        start_wave();
+        //start_wave();
         spawn_delay = 60;  // Reset delay for the next wave
     } else {
         spawn_delay--;
