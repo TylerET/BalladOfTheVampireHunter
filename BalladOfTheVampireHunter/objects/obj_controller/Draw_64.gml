@@ -16,6 +16,12 @@ if (global.isPaused && !instance_exists(obj_level_up_screen)) {
     var y_center = (cam_height / 2) - (text_height / 2);
 
     draw_text(x_center, y_center, text);
+    
+    var sprite_x = (cam_width / 2) - (sprite_get_width(spr_ui_control_overlay) / 2);
+    var sprite_y = cam_height - sprite_get_height(spr_ui_control_overlay) - 20; 
+    
+    draw_sprite(spr_ui_control_overlay, 0, sprite_x, sprite_y);
+	
     draw_set_color(c_white);
 }
 
