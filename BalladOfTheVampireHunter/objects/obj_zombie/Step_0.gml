@@ -10,13 +10,13 @@ if (instance_exists(obj_player))
 	
 	//Speed handler
 	if (distance_to_object(obj_player) < 300) {
-		max_speed = 9
+		max_speed = 7
 	} else {
 		max_speed = 3
 	}
 	
 	if (speed < max_speed) {
-		speed += 0.2
+		speed += 0.15
 		speed = min(speed, max_speed)
 	}
 }

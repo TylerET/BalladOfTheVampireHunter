@@ -18,3 +18,7 @@ function set_xp_goal_based_on_level() {
 }
 
 #endregion
+
+#region cheatcodes
+global.cheatIsInvis = false;
+#endregion
