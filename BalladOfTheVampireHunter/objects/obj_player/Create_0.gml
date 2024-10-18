@@ -10,3 +10,6 @@ enum DIR {
 	DOWN
 }
 
+toast_message = "";
+toast_timer = 0;
+
