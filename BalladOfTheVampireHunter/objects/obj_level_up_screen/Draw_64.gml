@@ -51,9 +51,13 @@ draw_sprite(spr_banjo, 0, card4_x, card_y);
 draw_set_font(fnt_small);
 var text_y_offset = card_y + card_height / 2
 draw_text(card1_x, text_y_offset, "Damage Up");
+draw_text(card1_x, text_y_offset + 20, "(1)");
 draw_text(card2_x, text_y_offset, "Max HP Up");
+draw_text(card2_x, text_y_offset + 20, "(2)");
 draw_text(card3_x, text_y_offset, "Speed Up");
+draw_text(card3_x, text_y_offset + 20, "(3)");
 draw_text(card4_x, text_y_offset, "Music Up");
+draw_text(card4_x, text_y_offset + 20, "(4)");
 
 
 // Reset the color and alpha for further drawing operations
