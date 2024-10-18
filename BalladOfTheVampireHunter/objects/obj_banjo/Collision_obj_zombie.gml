@@ -5,7 +5,7 @@ if (!other.damage_cooldown)
     if (other.hp > 0) 
     {
 		global.mana += 10;
-        other.hp -= global.player_attk; 
+        other.hp -= obj_player.damage_amount; 
         other.damage_cooldown = true; 
 		other.is_damaged = true;
         other.alarm[1] = 30;

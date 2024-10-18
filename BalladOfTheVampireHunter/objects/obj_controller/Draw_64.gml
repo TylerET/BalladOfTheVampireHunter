@@ -26,7 +26,7 @@ if (global.isPaused && !instance_exists(obj_level_up_screen)) {
 
 if (global.game_over) {
     draw_set_color(c_white);  
-    var text = "WHAT A HORRIBLE NIGHT";
+    var text = "WHAT A HORRIBLE NIGHT \n You survived to wave: "+ string(obj_wave_manager.wave_number);
 	var subtext = "Press R to restart";
     var text_width = string_width(text);
     var text_height = string_height(text);
