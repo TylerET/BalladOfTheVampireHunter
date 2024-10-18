@@ -4,16 +4,13 @@
 
 if (instance_exists(obj_player)) 
 {   
-    // Distance sword is from the player
-    var _distance = 80;
-
     // Set the sword's position relative to the player
 	
-    x = obj_player.x + lengthdir_x(_distance, obj_player.mouse_angle);
-    y = obj_player.y + lengthdir_y(_distance, obj_player.mouse_angle);
+    x = obj_player.x + lengthdir_x(dist_from_player, initial_angle);
+    y = obj_player.y + lengthdir_y(dist_from_player, initial_angle);
     
-	
-    // Set the sword's rotation (including angle of sprite)
+    // Swing the banjo
     // image_angle = lerp(image_angle, (obj_player.mouse_direction * 90), 0.1)
-	image_angle = obj_player.mouse_angle
+	image_angle += swing_vel
+	swing_vel -= sign(swing_vel) - abs(swing_vel / 4)
 }
