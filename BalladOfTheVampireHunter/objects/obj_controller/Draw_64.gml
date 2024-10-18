@@ -47,11 +47,11 @@ if (global.game_over) {
     var cam_height = camera_get_view_height(cam);
     
     // Calculate the center position based on the camera/view size
-    var x_center = (cam_width / 2) - (text_width / 2);
-    var y_center = (cam_height / 2) - (text_height / 2);
+    var x_center = (cam_width / 2)
+    var y_center = (cam_height / 2)
 
     draw_text(x_center, y_center, text);
-	draw_text(x_center, y_center + 100, subtext);
+	draw_text(x_center, y_center + 200, subtext);
     draw_set_color(c_white);
 }
 
