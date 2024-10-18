@@ -12,4 +12,5 @@ enum DIR {
 
 toast_message = "";
 toast_timer = 0;
+atk_on_cd = false
 
