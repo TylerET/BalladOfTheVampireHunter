@@ -2,6 +2,7 @@
 
 
 
+
 ini_open("settings.ini");
 if (ini_key_exists("Settings", "isMusicPlaying")) {
     isMusicPlaying = ini_read_real("Settings", "isMusicPlaying", true); 

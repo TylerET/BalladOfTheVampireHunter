@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 // Wave system variables
-wave_number = 1;
+wave_number = 0;
 enemies_to_spawn = 5;  // Number of enemies per wave
 flyer_count = 2;       // Number of obj_enemy_flyer to spawn
 ghoul_count = 3;       // Number of obj_enemy_ghoul to spawn
