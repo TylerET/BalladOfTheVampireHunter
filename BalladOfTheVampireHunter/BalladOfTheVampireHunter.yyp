@@ -63,6 +63,7 @@
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
+    {"id":{"name":"obj_credits_text","path":"objects/obj_credits_text/obj_credits_text.yy",},},
     {"id":{"name":"obj_enemy_flyer","path":"objects/obj_enemy_flyer/obj_enemy_flyer.yy",},},
     {"id":{"name":"obj_enemy_ghoul","path":"objects/obj_enemy_ghoul/obj_enemy_ghoul.yy",},},
     {"id":{"name":"obj_intro_text","path":"objects/obj_intro_text/obj_intro_text.yy",},},
