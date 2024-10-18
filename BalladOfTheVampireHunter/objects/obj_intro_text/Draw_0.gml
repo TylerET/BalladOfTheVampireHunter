@@ -1,4 +1,4 @@
-var text_x = 100;
+var text_x = 300;
 var text_y = 200;
 var max_width = 800;  
 var line_spacing = 20;
