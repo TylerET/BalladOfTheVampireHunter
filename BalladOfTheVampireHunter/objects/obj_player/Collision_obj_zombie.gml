@@ -1,5 +1,5 @@
 /// @description 
-if (hp > 0 and !is_invincible) 
+if (hp > 0 and !is_invincible and !global.isPaused) 
 {
 	show_debug_message(hp)
 	hp -= damage_amount
