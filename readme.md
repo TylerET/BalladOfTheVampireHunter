@@ -48,5 +48,6 @@ This project includes third-party assets licensed under their own terms. Below i
 - **[Ghoul Sprite](https://elthen.itch.io/2d-pixel-art-ghoul-sprites)**: Created by [Elthen] and licensed under the [ Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
 - **[Flyer Sprite](https://elthen.itch.io/2d-pixel-art-vargouille-sprites)**: Created by [Elthen] and licensed under the [ Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
 - **[Boss Sprite](https://licinio-souza.itch.io/creatures-of-the-night-vampires-pixel-art-pack)**: Created by [MinLii] and licensed under the [ Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+- **[Boss Music - Wasted Blood](https://ivanduch.com/albums/vampires/)**: Created by [ivanduch] and licensed under the [ Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://ivanduch.com/licensing/).
 
 Please ensure that any use of these assets outside this project complies with their respective licenses.
