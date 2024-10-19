@@ -14,8 +14,9 @@ function get_boss_mode_string(mode) {
 }
 
 function show_toast(msg, duration) {
-	toast_message = msg;
-    toast_timer = duration;
+	show_debug_message(msg)
+	//toast_message = msg;
+    //toast_timer = duration;
 }
 
 
