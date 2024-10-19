@@ -15,3 +15,4 @@ if (!other.damage_cooldown)
         instance_destroy(other);
     }
 }
+audio_play_sound(snd_hit, 1, false);
