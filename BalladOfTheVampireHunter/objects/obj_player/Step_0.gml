@@ -72,24 +72,25 @@ if (xvel > yvel) {
 
 if (!global.isPaused and mouse_check_button(mb_left) and !atk_on_cd)
 {
-    var _banjo = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_banjo);
-    
     //Positioning Logic Described in obj_sword step event to set initial position for frame one
-	// handle alternate swinging direction
-	obj_persistent_controller.banjo_flipflop *= -1
-	
-	banjo_angle = mouse_angle + 90*(sign(obj_persistent_controller.banjo_flipflop))
+    // handle alternate swinging direction
+    obj_persistent_controller.banjo_flipflop *= -1
+    
+    banjo_angle = mouse_angle + 90*(sign(obj_persistent_controller.banjo_flipflop))
+    
+    var _banjo = instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_banjo);
 
     _banjo.x = obj_player.x + lengthdir_x(obj_banjo.dist_from_player, banjo_angle);
     _banjo.y = obj_player.y + lengthdir_y(obj_banjo.dist_from_player, banjo_angle);
-    
     _banjo.image_angle = banjo_angle
-	
-	atk_on_cd = true
-	alarm[2] = atk_cd
+    _banjo.visible = false
+    
+    atk_on_cd = true
+    alarm[2] = atk_cd
 }
 
 #endregion
+
 
 #region velocity handler
 if (!global.isPaused) {
@@ -181,4 +182,13 @@ function trigger_custom_event() {
 	show_debug_message("Game Over")
     global.game_over = true;
 }
+}
+
+if ( mouse_check_button_pressed(mb_right)) {
+	if (global.mana >= 60) {
+    instance_create_layer(x, y, "Instances", obj_bullet_player);
+    global.mana -= 60;
+	} else {
+	obj_controller.show_toast("Not enough musical inspiration", 30)
+	}
 }

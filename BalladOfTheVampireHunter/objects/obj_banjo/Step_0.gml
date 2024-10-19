@@ -4,6 +4,7 @@
 
 if (instance_exists(obj_player)) 
 {   
+	if (!visible) visible = true
 	//velocity handler
 	swing_angle += swing_vel
     swing_vel -= sign(swing_vel)*(abs(swing_vel / 7))
