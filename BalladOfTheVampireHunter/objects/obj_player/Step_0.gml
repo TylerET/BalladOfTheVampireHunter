@@ -85,6 +85,8 @@ if (!global.isPaused and mouse_check_button(mb_left) and !atk_on_cd)
     
     _banjo.image_angle = banjo_angle
 	
+	_banjo.visible = false
+	
 	atk_on_cd = true
 	alarm[2] = atk_cd
 }
