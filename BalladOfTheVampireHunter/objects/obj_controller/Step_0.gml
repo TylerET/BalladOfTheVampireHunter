@@ -54,7 +54,7 @@ if (keyboard_check(vk_alt) && !instance_exists(obj_level_up_screen)) {
     else if (keyboard_check_pressed(ord("4"))) {
         show_toast("To Boss: skip to the final boss fight immediately", 60);
 		// TODO
-		// room_goto(rm_boss)
+		 room_goto(rm_boss)
     }
     else if (keyboard_check_pressed(ord("5"))) {
         show_toast("Next wave: advance the wave immediately", 60);

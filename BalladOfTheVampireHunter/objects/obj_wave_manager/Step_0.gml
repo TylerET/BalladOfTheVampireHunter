@@ -3,6 +3,12 @@
 
 if (!wave_active) {
     // Start the wave after a delay
+	if (wave_number >= 5) {
+		obj_player.x = 9632;
+		obj_player.y = 5376;
+		room_goto_next()
+		
+	}
     if (spawn_delay <= 0) {
         start_wave();
         spawn_delay = 60;  // Reset delay for the next wave

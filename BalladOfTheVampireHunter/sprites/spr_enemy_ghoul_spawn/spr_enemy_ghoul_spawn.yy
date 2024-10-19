@@ -12,12 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5f768f22-d75f-41d0-ad6a-24c03be14dac","name":"5f768f22-d75f-41d0-ad6a-24c03be14dac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"5a1b37c3-a10d-4b59-bbe1-b3ee007bb950","name":"5a1b37c3-a10d-4b59-bbe1-b3ee007bb950","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"fe20e10f-d2e7-470e-8080-a230b1f53729","name":"fe20e10f-d2e7-470e-8080-a230b1f53729","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b9136ca4-5c08-4385-8638-433ab1c73906","name":"b9136ca4-5c08-4385-8638-433ab1c73906","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"331feef8-78b4-45a6-aae0-b52580ee0f3f","name":"331feef8-78b4-45a6-aae0-b52580ee0f3f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"c0b71916-c531-4bb7-87ff-2b714a7238e1","name":"c0b71916-c531-4bb7-87ff-2b714a7238e1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"331feef8-78b4-45a6-aae0-b52580ee0f3f","name":"331feef8-78b4-45a6-aae0-b52580ee0f3f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"b9136ca4-5c08-4385-8638-433ab1c73906","name":"b9136ca4-5c08-4385-8638-433ab1c73906","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"fe20e10f-d2e7-470e-8080-a230b1f53729","name":"fe20e10f-d2e7-470e-8080-a230b1f53729","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"5a1b37c3-a10d-4b59-bbe1-b3ee007bb950","name":"5a1b37c3-a10d-4b59-bbe1-b3ee007bb950","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"5f768f22-d75f-41d0-ad6a-24c03be14dac","name":"5f768f22-d75f-41d0-ad6a-24c03be14dac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -74,23 +74,23 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5f768f22-d75f-41d0-ad6a-24c03be14dac","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4f4d7b35-3885-4025-800e-c328507089c9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5a1b37c3-a10d-4b59-bbe1-b3ee007bb950","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d6db9e38-aa09-4325-a2b4-a55fab57e70c","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe20e10f-d2e7-470e-8080-a230b1f53729","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"98f36bd6-d147-487b-9283-f14f305c49cc","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9136ca4-5c08-4385-8638-433ab1c73906","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"cade0d8a-6169-4072-baa8-b09f7a5cd320","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c0b71916-c531-4bb7-87ff-2b714a7238e1","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c8562e98-f736-487e-b545-fe72adb10472","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"331feef8-78b4-45a6-aae0-b52580ee0f3f","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0951974c-0649-45c6-b536-6d92cc29a7a8","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+              },"Disabled":false,"id":"0951974c-0649-45c6-b536-6d92cc29a7a8","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c0b71916-c531-4bb7-87ff-2b714a7238e1","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c8562e98-f736-487e-b545-fe72adb10472","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b9136ca4-5c08-4385-8638-433ab1c73906","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cade0d8a-6169-4072-baa8-b09f7a5cd320","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fe20e10f-d2e7-470e-8080-a230b1f53729","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"98f36bd6-d147-487b-9283-f14f305c49cc","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5a1b37c3-a10d-4b59-bbe1-b3ee007bb950","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d6db9e38-aa09-4325-a2b4-a55fab57e70c","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5f768f22-d75f-41d0-ad6a-24c03be14dac","path":"sprites/spr_enemy_ghoul_spawn/spr_enemy_ghoul_spawn.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4f4d7b35-3885-4025-800e-c328507089c9","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

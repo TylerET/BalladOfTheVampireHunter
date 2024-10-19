@@ -32,6 +32,7 @@ if (global.isPaused && !instance_exists(obj_level_up_screen)) {
 
 if (global.game_over) {
     draw_set_color(c_white);  
+	draw_set_font(fnt_large)
     var text = "WHAT A HORRIBLE NIGHT \n You survived to wave: "
 	// fixes crash issue with dying during the first wave
 	if (instance_exists(obj_wave_manager)) {
