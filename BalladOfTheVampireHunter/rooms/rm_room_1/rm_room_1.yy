@@ -137,7 +137,6 @@
     {"name":"inst_6D58A9C5","path":"rooms/rm_room_1/rm_room_1.yy",},
     {"name":"inst_165B261B","path":"rooms/rm_room_1/rm_room_1.yy",},
     {"name":"inst_5A7AE24","path":"rooms/rm_room_1/rm_room_1.yy",},
-    {"name":"inst_55B06F78","path":"rooms/rm_room_1/rm_room_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -339,7 +338,6 @@
         {"$GMRInstance":"v1","%Name":"inst_6D58A9C5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6D58A9C5","objectId":{"name":"obj_wall_collisions","path":"objects/obj_wall_collisions/obj_wall_collisions.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":9728.0,"y":6592.0,},
         {"$GMRInstance":"v1","%Name":"inst_165B261B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_165B261B","objectId":{"name":"obj_wall_collisions","path":"objects/obj_wall_collisions/obj_wall_collisions.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":9760.0,"y":6592.0,},
         {"$GMRInstance":"v1","%Name":"inst_5A7AE24","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A7AE24","objectId":{"name":"obj_wall_collisions","path":"objects/obj_wall_collisions/obj_wall_collisions.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":9696.0,"y":6592.0,},
-        {"$GMRInstance":"v1","%Name":"inst_55B06F78","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_55B06F78","objectId":{"name":"obj_enemy_boss","path":"objects/obj_enemy_boss/obj_enemy_boss.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":9984.0,"y":6240.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_background","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_background","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":225,"SerialiseWidth":400,"TileCompressedData":[
           10401,82,81,82,81,82,81,82,81,82,81,82,81,82,81,82,81,82,81,82,81,82,81,82,81,82,81,82,81,82,81,82,81,

@@ -1,106 +1,115 @@
 /// @description
 /// Boss logic to stop near the player, attack, and ensure the attack animation finishes with a cooldown.
+function get_boss_mode_string(mode) {
+    switch (mode) {
+        case BossMode.MeleeMode: 
+            return "Melee Mode";
+        case BossMode.RangeMode: 
+            return "Range Mode";
+        case BossMode.SummoningMode: 
+            return "Summoning Mode";
+        default:
+            return "Unknown Mode";
+    }
+}
+
+function show_toast(msg, duration) {
+	toast_message = msg;
+    toast_timer = duration;
+}
+
+
 
 if (instance_exists(obj_player)) 
 {
-    if (isMeleeMode) {
-        // Point towards the player
+    // MeleeMode logic
+    if (current_mode == BossMode.MeleeMode) {
+        show_toast(get_boss_mode_string(BossMode.MeleeMode), 60);
         direction = point_direction(x, y, obj_player.x, obj_player.y);
-    
-        // Calculate distance to player
         var dist_to_player = distance_to_object(obj_player);
-    
-        // Set attack range and movement speed
-        var attack_range = 50;  // Distance at which the boss stops to attack
-        var max_speed = 5;      // Boss speed
+        var attack_range = 50;  
+        var max_speed = 5;
 
-        // Check if currently attacking, let the animation finsish
         if (sprite_index == spr_enemy_boss_attack_1 || sprite_index == spr_enemy_boss_attack_2) {
-            // If the attack animation is still playing, do nothing else
-            if (image_index < image_number - 1) {
-                return;
-            } else {
-                // Attack animation finished, start cooldown
-                alarm[2] = 120;
-            }
+            if (image_index < image_number - 1) return;
+            alarm[2] = 120;
         }
 
         if (dist_to_player > attack_range) {
-            // Move towards the player if not already in attack range
-            sprite_index = spr_enemy_boss_run;  // Use running animation
-
+            sprite_index = spr_enemy_boss_run; 
             if (speed < max_speed) {
                 speed += 0.15;
                 speed = min(speed, max_speed);
             }
         } else {
-            // In range: only stop to attack if alarm[2] is 0 (cooldown period)
             if (alarm[2] <= 0) {
                 speed = 0;
-            
-                // Randomly choose an attack animation if no attack is ongoing
                 if (sprite_index != spr_enemy_boss_attack_1 && sprite_index != spr_enemy_boss_attack_2) {
-                    if (choose(1, 2) == 1) {
-                        sprite_index = spr_enemy_boss_attack_1;
-                    } else {
-                        sprite_index = spr_enemy_boss_attack_2;
-                    }
-
-                    // Reset animation frame
+                    sprite_index = choose(spr_enemy_boss_attack_1, spr_enemy_boss_attack_2);
                     image_index = 0;
+                    if (distance_to_object(obj_player) <= attack_range) obj_player.trigger_custom_event();
 
-                    // Perform the attack logic (e.g., dealing damage)
-                    if (distance_to_object(obj_player) <= attack_range) {
-                        obj_player.hp -= 1;
-                    }
                 }
             } else {
-                // While on cooldown, use idle animation but continue moving if needed
                 sprite_index = spr_enemy_boss_idle;
             }
         }
     }
-    else {
-            var distance_to_player = point_distance(x, y, obj_player.x, obj_player.y);
 
-    if (distance_to_player < min_distance) 
-	{
-        direction = point_direction(obj_player.x, obj_player.y, x, y);
-        speed = 3 / 2;
-		
-		if (can_attack)
-		{
-			
-            // Perform ranged attack
-			sprite_index = spr_enemy_boss_attack_3;
-            instance_create_layer(x, y, "Instances", obj_bullet_boss);
-            can_attack = false;
-            alarm[4] = attack_cooldown;
-        }
-    } 
-	else if (distance_to_player > range)
-	{
-        direction = point_direction(x, y, obj_player.x, obj_player.y);
-        speed = 3 / 2;
-    } 
-	else 
-	{
-        speed = 0;
-        
-        if (can_attack)
-		{
-            // Perform ranged attack
-            instance_create_layer(x, y, "Instances", obj_bullet_boss);
-            can_attack = false;
-            alarm[4] = attack_cooldown;
+    // RangeMode logic
+    else if (current_mode == BossMode.RangeMode) {
+        var distance_to_player = point_distance(x, y, obj_player.x, obj_player.y);
+        if (distance_to_player < min_distance) {
+            direction = point_direction(obj_player.x, obj_player.y, x, y);
+            speed = 3 / 2;
+            if (can_attack) {
+                sprite_index = spr_enemy_boss_attack_3;
+                instance_create_layer(x, y, "Instances", obj_bullet_boss);
+                can_attack = false;
+                alarm[4] = attack_cooldown;
+            }
+        } else if (distance_to_player > range) {
+            direction = point_direction(x, y, obj_player.x, obj_player.y);
+            speed = 3 / 2;
+        } else {
+            speed = 0;
+            if (can_attack) {
+                instance_create_layer(x, y, "Instances", obj_bullet_boss);
+                can_attack = false;
+                alarm[4] = attack_cooldown;
+            }
         }
     }
+
+    // SummoningMode logic
+    else if (current_mode == BossMode.SummoningMode) {
+        show_toast(get_boss_mode_string(BossMode.SummoningMode), 60);
+
+        // Set to summoning animation and make boss stationary
+        sprite_index = spr_enemy_boss_summon;
+        speed = 0;
+
+        // Check if summoning cooldown (alarm[5]) has expired
+        if (alarm[5] <= 0) {
+            var cam_x1 = camera_get_view_x(view_camera[0]);
+            var cam_y1 = camera_get_view_y(view_camera[0]);
+            var cam_x2 = cam_x1 + camera_get_view_width(view_camera[0]);
+            var cam_y2 = cam_y1 + camera_get_view_height(view_camera[0]);
+
+            // Generate a random position within the camera view
+            var summon_x = random_range(cam_x1, cam_x2); 
+            var summon_y = random_range(cam_y1, cam_y2);
+
+            // Summon the ghoul at the random position
+            instance_create_layer(summon_x, summon_y, "Instances", obj_enemy_summoned_ghoul);
+
+            // Reset summoning cooldown to 3 seconds (180 frames)
+            alarm[5] = 180;
+        }
     }
 }
-else
-{
+else {
     // If the player is dead, stop moving and go idle
     speed = 0;
     sprite_index = spr_enemy_boss_idle;
 }
-

@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_enemy_boss_block",
+  "%Name":"spr_enemy_boss_summon",
   "bboxMode":0,
   "bbox_bottom":396,
   "bbox_left":75,
@@ -29,7 +29,7 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"b83b7114-a333-45ef-b4d8-99b35d945dc9","blendMode":0,"displayName":"default","isLocked":false,"name":"b83b7114-a333-45ef-b4d8-99b35d945dc9","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_enemy_boss_block",
+  "name":"spr_enemy_boss_summon",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -41,7 +41,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_enemy_boss_block",
+    "%Name":"spr_enemy_boss_summon",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -65,7 +65,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_enemy_boss_block",
+    "name":"spr_enemy_boss_summon",
     "playback":1,
     "playbackSpeed":8.0,
     "playbackSpeedType":0,
@@ -77,31 +77,31 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a66dd957-141e-43c2-af68-c1be5f768053","path":"sprites/spr_enemy_boss_block/spr_enemy_boss_block.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a66dd957-141e-43c2-af68-c1be5f768053","path":"sprites/spr_enemy_boss_summon/spr_enemy_boss_summon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"ca7bd8c0-e5c5-4e30-b829-5511a0bbc2d7","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23b938af-969f-403c-9578-958480e33b02","path":"sprites/spr_enemy_boss_block/spr_enemy_boss_block.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23b938af-969f-403c-9578-958480e33b02","path":"sprites/spr_enemy_boss_summon/spr_enemy_boss_summon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"262ad637-1205-4b50-8e1b-4addec8f5702","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9b91061-423f-4a66-8126-b434638a2ebc","path":"sprites/spr_enemy_boss_block/spr_enemy_boss_block.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9b91061-423f-4a66-8126-b434638a2ebc","path":"sprites/spr_enemy_boss_summon/spr_enemy_boss_summon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"f7047385-67d7-4a7e-b10e-0b39930df7f8","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3b750ce-9b63-4e32-9a15-510127092b71","path":"sprites/spr_enemy_boss_block/spr_enemy_boss_block.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f3b750ce-9b63-4e32-9a15-510127092b71","path":"sprites/spr_enemy_boss_summon/spr_enemy_boss_summon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"a13968dd-a665-4900-be46-f2e7d04f933c","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"29efbdb1-d2a5-4271-9a02-a42f6d3e20a6","path":"sprites/spr_enemy_boss_block/spr_enemy_boss_block.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"29efbdb1-d2a5-4271-9a02-a42f6d3e20a6","path":"sprites/spr_enemy_boss_summon/spr_enemy_boss_summon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"1534c3fe-c1e3-499a-a8af-617711c802b1","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"16f1f3b0-09ab-4f45-be61-b7667539f1c3","path":"sprites/spr_enemy_boss_block/spr_enemy_boss_block.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"16f1f3b0-09ab-4f45-be61-b7667539f1c3","path":"sprites/spr_enemy_boss_summon/spr_enemy_boss_summon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c7872660-fa63-4d57-aa6b-cce8059512c4","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7c7258f3-f3e8-45b5-9b41-8e809c785912","path":"sprites/spr_enemy_boss_block/spr_enemy_boss_block.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7c7258f3-f3e8-45b5-9b41-8e809c785912","path":"sprites/spr_enemy_boss_summon/spr_enemy_boss_summon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c7a09e73-7a4e-4bd3-ac69-cbd91b219312","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d7337a10-5ac4-4a52-a0a4-76fc1b54e179","path":"sprites/spr_enemy_boss_block/spr_enemy_boss_block.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d7337a10-5ac4-4a52-a0a4-76fc1b54e179","path":"sprites/spr_enemy_boss_summon/spr_enemy_boss_summon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"62fa200d-63a4-4b12-8931-3b146db2a356","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2259110f-fc15-4dd2-ab2a-8fcda64dd6f2","path":"sprites/spr_enemy_boss_block/spr_enemy_boss_block.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2259110f-fc15-4dd2-ab2a-8fcda64dd6f2","path":"sprites/spr_enemy_boss_summon/spr_enemy_boss_summon.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"27b73101-7d2c-4ab9-865d-71c7ecd06b7f","IsCreationKey":false,"Key":8.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
