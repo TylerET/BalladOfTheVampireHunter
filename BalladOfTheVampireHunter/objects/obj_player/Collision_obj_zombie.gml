@@ -11,3 +11,4 @@ if (hp > 0 and !is_invincible)
 	// instance_destroy()
     global.game_over = true;
 }
+audio_play_sound(snd_hit, 1, false);
