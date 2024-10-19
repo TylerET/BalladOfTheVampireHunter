@@ -1,5 +1,4 @@
-/// @description unstick the player
+/// @description Insert description here
+// You can write your code in this editor
 x-=50
 y+=50
-
-//i am so sorry our collision was very rushed.
