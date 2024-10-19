@@ -99,6 +99,7 @@
     {"id":{"name":"rm_outro_room","path":"rooms/rm_outro_room/rm_outro_room.yy",},},
     {"id":{"name":"rm_room_1","path":"rooms/rm_room_1/rm_room_1.yy",},},
     {"id":{"name":"snd_arsenal_torn","path":"sounds/snd_arsenal_torn/snd_arsenal_torn.yy",},},
+    {"id":{"name":"snd_wasted_blood","path":"sounds/snd_wasted_blood/snd_wasted_blood.yy",},},
     {"id":{"name":"shriek","path":"sprites/shriek/shriek.yy",},},
     {"id":{"name":"spr_banjo","path":"sprites/spr_banjo/spr_banjo.yy",},},
     {"id":{"name":"spr_bullet_boss","path":"sprites/spr_bullet_boss/spr_bullet_boss.yy",},},
