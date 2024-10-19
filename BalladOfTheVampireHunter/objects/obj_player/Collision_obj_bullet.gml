@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (hp > 0 and !is_invincible and !global.isPaused) 
+if (hp > 0 and !is_invincible) 
 {
 	show_debug_message(hp)
 	hp -= 1
